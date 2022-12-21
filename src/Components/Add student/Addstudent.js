@@ -36,7 +36,7 @@ const Addstudent = ({}) => {
     form.append('Image', file);
     // form.append('my_field', 'my value');
   
-    fetch('https://brmc-server.herokuapp.com/poststudent',{
+    fetch('https://server-brmc.onrender.com/poststudent',{
       method:'POST',
       body:form
     })
@@ -50,7 +50,7 @@ const Addstudent = ({}) => {
 // console.log(studentdata)
 
 const deletestudent=(id)=>{
-  fetch(`https://brmc-server.herokuapp.com/deletestudent/${id}`,{
+  fetch(`https://server-brmc.onrender.com/deletestudent/${id}`,{
     method:'DELETE'
   })
   .then(result=>{setstudentdatadeleted(result);setsending(true)})
@@ -64,7 +64,7 @@ console.log(Loggedin)
 
 const[studentdata,setstudentdata]=useState([])
 useEffect(()=>{
-fetch('https://brmc-server.herokuapp.com/getstudents')
+fetch('https://server-brmc.onrender.com/getstudents')
 .then(res=>res.json())
 .then(result=>{setstudentdata(result);
 

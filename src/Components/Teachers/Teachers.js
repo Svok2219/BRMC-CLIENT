@@ -5,7 +5,7 @@ import Updateacher from './Modal';
 const Teachers = () => {
   const [data,setdata]=useState([])
   useEffect(()=>
-  fetch('https://brmc-server.herokuapp.com/getteachers')
+  fetch('https://server-brmc.onrender.com/getteachers')
   .then(res=>res.json())
   .then(result=>setdata(result))
   ,[])

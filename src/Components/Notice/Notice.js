@@ -12,7 +12,7 @@ const Notice = () => {
   const{NoticeText}=notice
 
 const onsave=(e)=>{
-  fetch('https://brmc-server.herokuapp.com/postnotice',{
+  fetch('https://server-brmc.onrender.com/postnotice',{
     method:'POST',
     headers:{'Content-Type':'application/json'},
    body:JSON.stringify(notice)  
@@ -25,7 +25,7 @@ e.preventDefault()
 }
 const [dldata,setdldata]=useState([])
 const removethisnotice=(id)=>{
-  fetch(`https://brmc-server.herokuapp.com/unpinAnotice/${id}`,{
+  fetch(`https://server-brmc.onrender.com/unpinAnotice/${id}`,{
     method:"DELETE"
   })
   // .then(res=>res.json())
@@ -34,7 +34,7 @@ const removethisnotice=(id)=>{
 
 const [data,setdata]=useState([])
 useEffect(()=>
-fetch('https://brmc-server.herokuapp.com/getNotice')
+fetch('https://server-brmc.onrender.com/getNotice')
 .then(res=>res.json())
 .then(result=>setdata(result))
 ,[dldata,send])

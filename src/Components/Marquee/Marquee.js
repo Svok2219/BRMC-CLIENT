@@ -3,7 +3,7 @@ import '../Marquee/Marquee.css'
 const Marquee = () => {
   const [data,setdata]=useState([])
   useEffect(()=>
-  fetch('https://brmc-server.herokuapp.com/getNotice')
+  fetch('https://server-brmc.onrender.com/getNotice')
   .then(res=>res.json())
   .then(result=>setdata(result))
   ,[])

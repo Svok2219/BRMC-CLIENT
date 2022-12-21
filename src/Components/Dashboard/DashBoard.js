@@ -64,7 +64,7 @@ setLoggedin(loggedin)
         
 //     const[studentdata,setstudentdata]=useState([])
 //     useEffect(()=>{
-//     fetch('https://brmc-server.herokuapp.com/getstudent')
+//     fetch('https://server-brmc.onrender.com/getstudent')
 //     .then(res=>res.json())
 //     .then(result=>setstudentdata(result))
 //     },[])

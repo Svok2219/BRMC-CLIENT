@@ -46,7 +46,7 @@ formData.append('File',updatingvalueFile)
 
 // console.log(updatingvalueFile,Group,Email,Name,Subject)
 
-    fetch(`https://brmc-server.herokuapp.com/updateTeacher/${modalTeacher._id}`,{
+    fetch(`https://server-brmc.onrender.com/updateTeacher/${modalTeacher._id}`,{
       method:'PATCH',
       // headers:{'Content-Type':'application/json'},
       body:formData

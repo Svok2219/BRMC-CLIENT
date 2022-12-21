@@ -30,7 +30,7 @@ setvalue2(number)
 const formData = new FormData();
 formData.append('Updated',updatevacancy) 
 
-    fetch(`https://brmc-server.herokuapp.com/updatevacancy/${value}`,{
+    fetch(`https://server-brmc.onrender.com/updatevacancy/${value}`,{
       method:'PATCH',
       // headers:{'Content-Type':'application/json'},
       body:formData
@@ -42,7 +42,7 @@ e.preventDefault()
 
   const [data,setdata]=useState([])
   useEffect(()=>
-  fetch('https://brmc-server.herokuapp.com/gettvacancy')
+  fetch('https://server-brmc.onrender.com/gettvacancy')
   .then(res=>res.json())
   .then(result=>setdata(result))
   ,[])

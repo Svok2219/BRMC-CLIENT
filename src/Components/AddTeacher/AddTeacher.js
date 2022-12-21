@@ -31,7 +31,7 @@ const onsave=(e)=>{
   form.append('Image', file);
   // form.append('my_field', 'my value');
 
-  fetch('https://brmc-server.herokuapp.com/postteachers',{
+  fetch('https://server-brmc.onrender.com/postteachers',{
     method:'POST',
     body:form
   })

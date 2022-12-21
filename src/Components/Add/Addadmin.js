@@ -10,7 +10,7 @@ const Addadmin = () => {
 
   const[gotresult,setresult]=useState([])
 const onsave =(e)=>{
-  fetch('https://brmc-server.herokuapp.com/postadmins',{
+  fetch('https://server-brmc.onrender.com/postadmins',{
     method:'POST',
     headers: { 'Content-Type': 'application/json' },
    body:JSON.stringify(adminEmail)   

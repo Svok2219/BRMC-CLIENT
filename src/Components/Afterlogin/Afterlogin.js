@@ -10,7 +10,7 @@ const Afterlogin = () => {
       const{email}=Loggedin
       console.log(email)
   useEffect(()=>
-  fetch(`https://brmc-server.herokuapp.com/getadmins?AdminEmail=${email}`)
+  fetch(`https://server-brmc.onrender.com/getadmins?AdminEmail=${email}`)
   .then(res=>res.json())
   .then(result=>{
     if (result.length == 0) {
