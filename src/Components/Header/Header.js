@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../Header/Header.css'
+// import Logo from ""
 const Header = () => {
     return (
             <div class="bg-gray-900 " id="home">
@@ -21,8 +22,7 @@ const Header = () => {
 </header>
 <section class="text-gray-700 body-font " >
   <div class="container mx-auto flex  py-12  items-center justify-center flex-col ">
-    <img class="lg:w-4/6 md:w-4/6 h-72 sm:h-full   w-6/6  mb-10 object-cover object-center rounded" alt="hero" src=
-    "https://scontent.fdac24-1.fna.fbcdn.net/v/t1.0-9/102307073_2688752447897287_9141166399147088068_n.jpg?_nc_cat=109&ccb=2&_nc_sid=825194&_nc_eui2=AeHaeCgF_eH-LE7bxXy_79WWwVpZliiy7mrBWlmWKLLuaoy63F-TBsGZGW1FO6PYvnTb4wjLTBz4SNdy5EiMYn5p&_nc_ohc=Ba0sk3tNcXwAX8A0tQN&_nc_ht=scontent.fdac24-1.fna&oh=4e7d7c9e2ffbdd832d75a543e7149f5d&oe=600709DB"
+    <img class="lg:w-4/6 md:w-5/6 h-72 sm:h-full   w-6/6  mb-10 object-cover object-center rounded" alt="hero" src="images/download.jpg"
     />
     <div class="text-center px-10 sm:px-0 lg:w-2/3 w-full" >
       <h1 class="title-font sm:text-2xl text-4xl mb-4 font-bold text-white" style={{fontSize:"35px"}}>The Buds Resitential Model College</h1>
